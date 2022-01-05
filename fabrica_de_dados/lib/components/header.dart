@@ -1,7 +1,8 @@
+import 'package:fabrica_de_dados/components/dropdown.dart';
 import 'package:flutter/material.dart';
 
 class Header extends StatefulWidget {
-  Header({Key? key}) : super(key: key);
+  const Header({Key? key}) : super(key: key);
 
   @override
   _HeaderState createState() => _HeaderState();
@@ -15,11 +16,39 @@ class _HeaderState extends State<Header> {
       width: double.infinity,
       color: Colors.white,
       margin: const EdgeInsets.only(top: 5.0),
-      child: const Align(
-          alignment: Alignment.center,
-          child: Text(
-            "Fabrica de dados",
-          )),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Container(width: 65, child: const DropDown()),
+          Container(
+              height: 45,
+              width: 270,
+              color: Colors.purple[200],
+              child: const Align(
+                  alignment: Alignment.center,
+                  child: Text("30% off toda sexta feira",
+                      style: TextStyle(fontSize: 20)))),
+          Container(
+            //color: Colors.amber,
+            child: const Text(
+              "Fabrica de Dados",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+            ),
+          ),
+          Container(
+            //color: Colors.green,
+            child: const Text("loja"),
+          ),
+          Container(
+            //color: Colors.blue,
+            child: const Text("sobre nos"),
+          ),
+          Container(
+            //color: Colors.blueGrey,
+            child: const Text("icones"),
+          )
+        ],
+      ),
     );
   }
 }
