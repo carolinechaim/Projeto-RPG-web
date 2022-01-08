@@ -9,6 +9,8 @@ class Header extends StatefulWidget {
 }
 
 class _HeaderState extends State<Header> {
+  get image => null;
+
   @override
   Widget build(BuildContext context) {
     return Container(
