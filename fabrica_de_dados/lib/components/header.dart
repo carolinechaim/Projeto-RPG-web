@@ -44,11 +44,17 @@ class _HeaderState extends State<Header> {
             child: const Text("sobre nos"),
           ),
           Container(
-            //color: Colors.blueGrey,
-            child: const Text("icones"),
+          width: 100.00,
+          height: 100.00,
+          decoration: new BoxDecoration(
+          image: new DecorationImage(
+          image: ExactAssetImage('assets/images/cart.png'),
+          fit: BoxFit.fitHeight,
+          ),
+          ),
+          ),
+          ],
           )
-        ],
-      ),
-    );
+          );
   }
 }
