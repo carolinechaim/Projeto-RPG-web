@@ -70,7 +70,9 @@ flutter:
      - ./assets/images/imagem-azul.png
      - ./assets/images/imagem-preta.jpg
      - ./assets/images/imagem-rosa.png
-
+     - ./assets/images/user.png
+     - ./assets/images/cart.png
+     - ./assets/images/watsapp.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
