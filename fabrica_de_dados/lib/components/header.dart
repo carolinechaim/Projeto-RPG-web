@@ -44,11 +44,36 @@ class _HeaderState extends State<Header> {
             child: const Text("sobre nos"),
           ),
           Container(
-            //color: Colors.blueGrey,
-            child: const Text("icones"),
+          width: 73,
+          height: 76,
+          decoration: new BoxDecoration(
+          image: new DecorationImage(
+          image: ExactAssetImage('assets/images/cart.png'),
+          fit: BoxFit.fitHeight,
+          ),
+          ),
+          ),
+          Container(
+          width: 67,
+          height: 70,
+          decoration: new BoxDecoration(
+          image: new DecorationImage(
+          image: ExactAssetImage('assets/images/user.png'),
+          fit: BoxFit.fitHeight,
+          ),
+          ),
+          ),Container(
+          width: 66,
+          height: 56,
+          decoration: new BoxDecoration(
+          image: new DecorationImage(
+          image: ExactAssetImage('assets/images/watsapp.png'),
+          fit: BoxFit.fitHeight,
+          ),
+          ),
+          ),
+          ],
           )
-        ],
-      ),
-    );
+          );
   }
 }
