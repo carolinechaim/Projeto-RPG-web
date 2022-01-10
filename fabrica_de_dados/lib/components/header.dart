@@ -9,16 +9,18 @@ class Header extends StatefulWidget {
 }
 
 class _HeaderState extends State<Header> {
+  var color;
+
+  get image => null;
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 70,
-      width: double.infinity,
-      color: Colors.white,
-      margin: const EdgeInsets.only(top: 5.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
+        height: 70,
+        width: double.infinity,
+        color: Colors.white,
+        margin: const EdgeInsets.only(top: 5.0),
+        child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
           Container(width: 65, child: const DropDown()),
           Container(
               height: 45,
@@ -27,53 +29,55 @@ class _HeaderState extends State<Header> {
               child: const Align(
                   alignment: Alignment.center,
                   child: Text("30% off toda sexta feira",
-                      style: TextStyle(fontSize: 20)))),
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color: Color.fromRGBO(0, 0, 0, 0.6))))),
           Container(
             //color: Colors.amber,
             child: const Text(
               "Fabrica de Dados",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                  color: Color.fromRGBO(0, 0, 0, 0.6)),
             ),
           ),
           Container(
             //color: Colors.green,
-            child: const Text("loja"),
+            child: const Text(
+              "loja",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromRGBO(0, 0, 0, 0.6)),
+            ),
           ),
           Container(
-            //color: Colors.blue,
-            child: const Text("sobre nos"),
+            child: const Text(
+              "sobre nos",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromRGBO(0, 0, 0, 0.6)),
+            ),
           ),
           Container(
-          width: 73,
-          height: 76,
-          decoration: new BoxDecoration(
-          image: new DecorationImage(
-          image: ExactAssetImage('assets/images/cart.png'),
-          fit: BoxFit.fitHeight,
+            child: Row(
+              children: const [
+                Icon(Icons.account_circle,
+                    color: Color.fromRGBO(0, 0, 0, 0.6), size: 28),
+                SizedBox(
+                  width: 20,
+                ),
+                Icon(Icons.message,
+                    color: Color.fromRGBO(0, 0, 0, 0.6), size: 28),
+                SizedBox(
+                  width: 20,
+                ),
+                Icon(Icons.shopping_cart_outlined,
+                    color: Color.fromRGBO(0, 0, 0, 0.6), size: 28)
+              ],
+            ),
           ),
-          ),
-          ),
-          Container(
-          width: 67,
-          height: 70,
-          decoration: new BoxDecoration(
-          image: new DecorationImage(
-          image: ExactAssetImage('assets/images/user.png'),
-          fit: BoxFit.fitHeight,
-          ),
-          ),
-          ),Container(
-          width: 66,
-          height: 56,
-          decoration: new BoxDecoration(
-          image: new DecorationImage(
-          image: ExactAssetImage('assets/images/watsapp.png'),
-          fit: BoxFit.fitHeight,
-          ),
-          ),
-          ),
-          ],
-          )
-          );
+        ]));
   }
 }
