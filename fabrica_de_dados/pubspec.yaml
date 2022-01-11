@@ -73,6 +73,10 @@ flutter:
      - ./assets/images/user.png
      - ./assets/images/cart.png
      - ./assets/images/watsapp.png
+     - ./assets/images/dice1.jpeg
+     - ./assets/images/dice2.jpg
+     - ./assets/images/dice3.jpg
+     - ./assets/images/dice4.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
