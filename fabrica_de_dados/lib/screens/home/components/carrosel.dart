@@ -74,7 +74,7 @@ class _CarroselState extends State<Carrosel> {
                 backgroundColor:
                     MaterialStateProperty.all<Color>(Colors.white)),
             onPressed: () => buttonCarouselController.nextPage(
-                duration: const Duration(milliseconds: 300),
+                duration: const Duration(milliseconds: 500),
                 curve: Curves.linear),
             child: const Icon(
               Icons.arrow_forward_ios_outlined,
