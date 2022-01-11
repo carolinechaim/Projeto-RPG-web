@@ -17,6 +17,9 @@ class MyApp extends StatelessWidget {
         fontFamily: 'BarlowSemiCondensed',
       ),
       home: const Scaffold(
+        drawer: Drawer(
+          child: Text("teste"),
+        ),
         backgroundColor: Color(0xFFC4C4C4),
         body: HomePage(),
       ),
