@@ -48,37 +48,57 @@ class _HeaderState extends State<Header> {
             ),
           ),
           Container(
-            //color: Colors.green,
+              //color: Colors.green,
+              child: TextButton(
             child: const Text(
               "loja",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Color.fromRGBO(0, 0, 0, 0.6)),
             ),
-          ),
+            onPressed: () {
+              print("loja");
+            },
+          )),
           Container(
+              child: TextButton(
             child: const Text(
-              "sobre nos",
+              "Sobre nós",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Color.fromRGBO(0, 0, 0, 0.6)),
             ),
-          ),
+            onPressed: () {
+              print("Sobre nós");
+            },
+          )),
           Container(
             child: Row(
-              children: const [
-                Icon(Icons.account_circle,
-                    color: Color.fromRGBO(0, 0, 0, 0.6), size: 28),
-                SizedBox(
+              children: [
+                IconButton(
+                    onPressed: () {
+                      print("account");
+                    },
+                    icon: const Icon(Icons.account_circle,
+                        color: Color.fromRGBO(0, 0, 0, 0.6), size: 28)),
+                const SizedBox(
                   width: 20,
                 ),
-                Icon(Icons.message,
-                    color: Color.fromRGBO(0, 0, 0, 0.6), size: 28),
-                SizedBox(
+                IconButton(
+                    onPressed: () {
+                      print("message");
+                    },
+                    icon: const Icon(Icons.message,
+                        color: Color.fromRGBO(0, 0, 0, 0.6), size: 28)),
+                const SizedBox(
                   width: 20,
                 ),
-                Icon(Icons.shopping_cart_outlined,
-                    color: Color.fromRGBO(0, 0, 0, 0.6), size: 28)
+                IconButton(
+                    onPressed: () {
+                      print("cart");
+                    },
+                    icon: const Icon(Icons.shopping_cart_outlined,
+                        color: Color.fromRGBO(0, 0, 0, 0.6), size: 28))
               ],
             ),
           ),
