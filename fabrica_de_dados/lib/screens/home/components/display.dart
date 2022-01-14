@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './carrosel.dart';
 
 class Display extends StatelessWidget {
   const Display({Key? key}) : super(key: key);
@@ -25,7 +26,7 @@ class Display extends StatelessWidget {
               color: Colors.purple[200],
               child: Column(
                 children: [
-                  Container(child: const Text('imagem 2')),
+                  Container(child: const Carrosel()),
                   Container(child: const Text('item 2'))
                 ],
               )),
@@ -35,7 +36,7 @@ class Display extends StatelessWidget {
               color: Colors.purple[200],
               child: Column(
                 children: [
-                  Container(child: const Text('imagem 3')),
+                  Container(child: const Text('item 3')),
                   Container(child: const Text('item 3'))
                 ],
               )),
