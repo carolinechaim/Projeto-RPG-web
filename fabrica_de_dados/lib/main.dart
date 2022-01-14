@@ -17,10 +17,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'BarlowSemiCondensed',
       ),
+
       home: const Scaffold(
         drawer: SideBar(),
         backgroundColor: Color(0xFFC4C4C4),
-        body: HomePage(),
+        body: ListView(children: const [HomePage()]),
+
       ),
     );
   }
