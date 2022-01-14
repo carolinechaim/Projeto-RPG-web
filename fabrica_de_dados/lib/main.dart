@@ -1,4 +1,5 @@
 import 'package:fabrica_de_dados/screens/home/home.dart';
+import 'package:fabrica_de_dados/components/sidebar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,12 +17,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'BarlowSemiCondensed',
       ),
-      home: Scaffold(
-        drawer: const Drawer(
-          child: Text("teste"),
-        ),
-        backgroundColor: const Color(0xFFC4C4C4),
+
+      home: const Scaffold(
+        drawer: SideBar(),
+        backgroundColor: Color(0xFFC4C4C4),
         body: ListView(children: const [HomePage()]),
+
       ),
     );
   }

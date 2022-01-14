@@ -21,11 +21,11 @@ class _HeaderState extends State<Header> {
         color: Colors.white,
         margin: const EdgeInsets.only(top: 5.0),
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-          ElevatedButton(
+          IconButton(
+              icon: Icon(Icons.menu),
               onPressed: () {
                 Scaffold.of(context).openDrawer();
-              },
-              child: Text("teste")),
+              }),
           Container(
               height: 45,
               width: 270,
