@@ -16,10 +16,7 @@ class Display extends StatelessWidget {
               color: Colors.purple[200],
               child: Column(
                 children: [
-                  Container(
-                      height: 100,
-                      color: Colors.red,
-                      child: const Text('imagem 1')),
+                  Image.asset('./assets/images/dice1.jpeg'),
                   Container(
                       height: 100,
                       color: Colors.blue,
@@ -32,10 +29,7 @@ class Display extends StatelessWidget {
               color: Colors.purple[200],
               child: Column(
                 children: [
-                  Container(
-                      height: 100,
-                      color: Colors.red,
-                      child: const Text('imagem 2')),
+                  Image.asset('./assets/images/dice4.jpg'),
                   Container(
                       height: 100,
                       color: Colors.blue,
@@ -48,10 +42,7 @@ class Display extends StatelessWidget {
               color: Colors.purple[200],
               child: Column(
                 children: [
-                  Container(
-                      height: 100,
-                      color: Colors.red,
-                      child: const Text('imagem 3')),
+                  Image.asset('./assets/images/dice2.jpg'),
                   Container(
                       height: 100,
                       color: Colors.blue,
