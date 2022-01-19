@@ -16,7 +16,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: const [Header(), SizedBox(height: 10), Carrosel(), Display()],
+      children: const [
+        Header(),
+        SizedBox(height: 10),
+        Carrosel(),
+        SizedBox(height: 10),
+        Display()
+      ],
     );
   }
 }
